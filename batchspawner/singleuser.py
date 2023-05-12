@@ -35,7 +35,7 @@ def main(argv=None):
     )
 
     cmd_path = which(sys.argv[1])
-    sys.argv = sys.argv[1:] + ["--port={}".format(port)]
+    sys.argv = sys.argv[1:] + ["--ServerApp.port={}".format(port)]
     run_path(cmd_path, run_name="__main__")
 
 
